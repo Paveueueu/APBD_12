@@ -1,9 +1,6 @@
-using APBD_12.Controllers;
 using APBD_12.Data;
 using APBD_12.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerUI;
 
 
 var builder = WebApplication.CreateBuilder(args);

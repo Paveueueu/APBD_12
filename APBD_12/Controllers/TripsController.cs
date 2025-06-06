@@ -48,10 +48,6 @@ public class TripsController(IDbService dbService) : ControllerBase
         {
             return BadRequest(ex.Message);
         }
-        catch (InvalidDateException ex)
-        {
-            return BadRequest(ex.Message);
-        }
         catch
         {
             return StatusCode(500);

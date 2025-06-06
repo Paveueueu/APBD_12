@@ -18,7 +18,7 @@ public class ClientsController(IDbService dbService) : ControllerBase
         }
         catch (CannotDeleteClientException ex)
         {
-            return StatusCode(500, ex.Message); // TODO
+            return BadRequest(ex.Message);
         }
         catch
         {
